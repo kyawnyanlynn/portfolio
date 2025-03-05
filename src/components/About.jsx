@@ -8,10 +8,10 @@ import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
-    <Tilt className=" xs:w-[250px] w-full">
+    <Tilt className=" w-[150px] flex justify-center items-center">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] "
       >
         <div
           options={{
@@ -19,9 +19,9 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-black rounded-[20px] py-5 px-2 min-h-[100px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <img src={icon} alt={title} className="w-12 h-12 object-contain" />
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
@@ -34,19 +34,23 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={`${styles.sectionHeadText} ${styles.jpHeadText}`}>
+          自己紹介
+        </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className={`${styles.jpSubText}mt-4 text-slate-100 text-[17px] max-w-3xl leading-[30px]`}
       >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia quidem
-        corrupti at cupiditate culpa dicta incidunt dolorum temporibus
-        blanditiis quibusdam ratione fugiat, officia asperiores provident
-        tempora consequatur debitis! Omnis, molestiae?
+        はじめまして、チョーニャンリンと申します。ミャンマー出身で、現在は日本電子専門学校のWebデザイン科1年生です。
+        趣味はサッカーをすることと、Esportsの試合やサッカーの試合を見ることです。コーディングも好きで、現在はフロントエンドエンジニアを目指して取り組んでいます。
+        どうぞよろしくお願いいたします。
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+
+      <motion.div variants={textVariant()}>
+        <h2 className={`${styles.jpHeadText} text-[30px] mt-14`}>スキル</h2>
+      </motion.div>
+      <div className="mt-16 flex flex-wrap justify-center md:justify-start gap-8">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

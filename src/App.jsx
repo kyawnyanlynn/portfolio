@@ -2,8 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 import {
   About,
   Contact,
-  Experience,
-  Hero,
+  Education,
+  Profile,
   Navbar,
   Works,
   StarsCanvas,
@@ -18,14 +18,16 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          <div className="relative z-0">
+            <StarsCanvas />
+            <Profile />
+          </div>
         </div>
         <About />
-        <Experience />
+        <Education />
         <Works />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
