@@ -22,7 +22,7 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flew-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] p-8 rounded-2xl bg-gray-400 border border-slate-400 shadow-lg backdrop-filter backdrop-blur-sm bg-opacity-30"
+        className="flex-[0.75] p-8 rounded-2xl card border border-[#e7e2e2] border-opacity-20"
       >
         <h3 className={`${styles.sectionHeadText} ${styles.jpHeadText}`}>
           連絡
@@ -40,7 +40,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="お名前をご記入ください。"
-              className="py-4 px-6 placeholder:text-slate border border-slate-100 text-white rounded-lg font-medium"
+              className="py-4 px-6 placeholder:text-[#e7e2e2] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -51,7 +51,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="メールアドラスをご記入ください。"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="py-4 px-6 placeholder:text-[#e7e2e2] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -63,12 +63,12 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="メッセージをお書きください。"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="py-4 px-6 placeholder:text-[#e7e2e2] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-[#000000] border border-[#e7e2e2] border-opacity-30 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? "送信中" : "送信"}
           </button>

@@ -9,6 +9,7 @@ import { styles } from "../styles";
 import { educationBg } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { staggerContainer } from "../utils/motion";
 
 const EducationCard = ({ education }) => {
   return (
@@ -16,7 +17,7 @@ const EducationCard = ({ education }) => {
       contentStyle={{ background: "#1d1d1d", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={education.date}
-      dateClassName="text-yellow-300" // Change this to your desired color
+      dateClassName="text-[#FFC93E" // Change this to your desired color
       iconStyle={{ background: education.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
@@ -50,7 +51,7 @@ const Education = () => {
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.heroHeadText} ${styles.jpHeadText}`}>学歴</h2>
       </motion.div>
-      <div className="mt-20 flex flex-col">
+      <div className="mt-20 flex flex-col relative">
         <VerticalTimeline>
           {educationBg.map((education, index) => (
             <EducationCard key={index} education={education} />

@@ -4,6 +4,8 @@ import {
   css,
   reactjs,
   tailwind,
+  photoshop,
+  illustrator,
   git,
   figma,
   carSch,
@@ -60,11 +62,11 @@ const services = [
   },
   {
     title: "Photoshop",
-    icon: "",
+    icon: photoshop,
   },
   {
     title: "Illustrator",
-    icon: "",
+    icon: illustrator,
   },
 ];
 

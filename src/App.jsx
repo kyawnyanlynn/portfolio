@@ -7,7 +7,9 @@ import {
   Navbar,
   Works,
   StarsCanvas,
+  ParticleCanvas,
 } from "./components";
+import bgImage from "./assets/moon.png";
 const App = () => {
   if (process.env.NODE_ENV === "development") {
     console.warn = () => {};
@@ -28,6 +30,7 @@ const App = () => {
         <Works />
         <div className="relative z-0">
           <Contact />
+          <ParticleCanvas />
         </div>
       </div>
     </BrowserRouter>

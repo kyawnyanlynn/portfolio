@@ -1,3 +1,3 @@
 import StarsCanvas from "./Stars";
-
-export { StarsCanvas };
+import ParticleCanvas from "./ContactParticle";
+export { StarsCanvas, ParticleCanvas };

@@ -40,7 +40,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className={`${styles.jpSubText}mt-4 text-slate-100 text-[17px] max-w-3xl leading-[30px]`}
+        className={`${styles.jpSubText}mt-4 text-slate- text-[17px] max-w-3xl leading-[30px]`}
       >
         はじめまして、チョーニャンリンと申します。ミャンマー出身で、現在は日本電子専門学校のWebデザイン科1年生です。
         趣味はサッカーをすることと、Esportsの試合やサッカーの試合を見ることです。コーディングも好きで、現在はフロントエンドエンジニアを目指して取り組んでいます。

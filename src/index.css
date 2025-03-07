@@ -13,9 +13,6 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
-.japanese-text {
-  font-family: "Noto Sans JP", sans-serif;
-}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -47,7 +44,7 @@
 }
 
 .green-pink-gradient {
-  background: #fff;
+  background: #e7e2e2;
   /* background: linear-gradient(90.13deg, #ffc93e 1.9%, #000000 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #ffc93e 1.9%, #000000 97.5%); */
 }
@@ -129,6 +126,13 @@
   transform: translateZ(0);
 }
 
+.card {
+  background: rgba(255, 255, 255, 0.053);
+  box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.064);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1;
+}
 @keyframes mulShdSpin {
   0%,
   100% {
