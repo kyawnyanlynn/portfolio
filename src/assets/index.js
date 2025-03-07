@@ -13,6 +13,7 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import photoshop from "./tech/photoshop.png";
 import illustrator from "./tech/illustrator.png";
+import framerMotion from "./tech/framerMotion.png";
 
 import languageSch from "./schools/ls.png";
 import carSch from "./schools/car.png";
@@ -38,6 +39,7 @@ export {
   tailwind,
   photoshop,
   illustrator,
+  framerMotion,
   languageSch,
   carSch,
   denshi,

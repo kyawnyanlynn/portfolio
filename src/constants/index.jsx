@@ -15,6 +15,7 @@ import {
   specialSite,
   quickCard,
   groceryList,
+  framerMotion,
 } from "../assets";
 export const navLinks = [
   {
@@ -67,6 +68,10 @@ const services = [
   {
     title: "Illustrator",
     icon: illustrator,
+  },
+  {
+    title: "FramerMotion",
+    icon: framerMotion,
   },
 ];
 
