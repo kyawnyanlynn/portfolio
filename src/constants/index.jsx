@@ -128,15 +128,15 @@ const works = [
     tags: [
       {
         name: "html",
-        color: "blue-text-gradient",
+        color: "work-textOrange",
       },
       {
         name: "javaScript",
-        color: "green-text-gradient",
+        color: "work-textYellow",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "work-textPink",
       },
     ],
     image: specialSite,
@@ -149,15 +149,15 @@ const works = [
     tags: [
       {
         name: "html",
-        color: "blue-text-gradient",
+        color: "work-textOrange",
       },
       {
         name: "javaScript",
-        color: "green-text-gradient",
+        color: "work-textYellow",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "work-textPink",
       },
     ],
     image: quickCard,
@@ -170,15 +170,15 @@ const works = [
     tags: [
       {
         name: "html",
-        color: "blue-text-gradient",
+        color: "work-textOrange",
       },
       {
         name: "react",
-        color: "green-text-gradient",
+        color: "work-textBlue",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "work-textPink",
       },
     ],
     image: groceryList,

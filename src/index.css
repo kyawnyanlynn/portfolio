@@ -60,45 +60,30 @@
   transform: rotate(-45deg);
 }
 .black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
 }
-
-.green-text-gradient {
-  background: #11998e;
-  background: -webkit-linear-gradient(to top, #11998e, #38ef7d);
-  background: linear-gradient(to top, #11998e, #38ef7d);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.white-gradient {
+  box-shadow: 1px 1px 3px rgba(37, 37, 37, 0.297);
+  background: #fff;
+  background: -webkit-linear-gradient(to right, #f5f5f5, #ffffff);
+  background: linear-gradient(to right, #f5f5f5, #ffffff);
 }
-
-.blue-text-gradient {
-  background: #56ccf2;
-  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
-  background: linear-gradient(to top, #2f80ed, #56ccf2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.work-textYellow {
+  color: #f0db4f;
 }
-
-.pink-text-gradient {
-  background: #ec008c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #ec008c,
-    #fc6767
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #ec008c,
-    #fc6767
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.work-textBlue {
+  color: #61dbfb;
+}
+.work-textPink {
+  color: #e31b5f;
+}
+.work-textGreen {
+  color: #f0db4f;
+}
+.work-textOrange {
+  color: #f06529;
 }
 
 /* canvas- styles */
