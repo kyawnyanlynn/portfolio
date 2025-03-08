@@ -2,9 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
+import { pdf } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { projects } from "../constants";
+import { works } from "../constants";
 
 const ProjectCard = ({
   index,
@@ -23,7 +24,7 @@ const ProjectCard = ({
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-start gap-1 m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -34,11 +35,17 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
+            <div
+              onClick={() => window.open(source_code_link, "_blank")}
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+            >
+              <img src={pdf} alt="pdf" className="w-1/2 h-1/2 object-contain" />
+            </div>
           </div>
         </div>
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-[#e7e2e2] text-[14px]">{description}</p>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -55,26 +62,23 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>プロジェクト</h2>
+        <h2 className={styles.sectionHeadText}>Works</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-x-3xl leading-[30px]"
+          className="mt-3 text-[#e7e2e2] text-[17px] max-x-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae
-          labore odio mollitia ducimus amet illum in excepturi maiores! Culpa,
-          impedit dolores. Esse nesciunt officiis error mollitia dolorem ad, ex
-          exercitationem.
+          これまで取り組んできた授業課題や個人プロジェクトの制作一覧です。企画からデザイン、実装まで幅広く担当し、実践的なスキルを磨いてきました。よろしければご覧ください。
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap justify-center lg:justify-start gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {works.map((work, index) => (
+          <ProjectCard key={`work-${index}`} index={index} {...work} />
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "projects");
+export default SectionWrapper(Works, "works");

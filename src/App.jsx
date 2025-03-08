@@ -9,7 +9,6 @@ import {
   StarsCanvas,
   ParticleCanvas,
 } from "./components";
-import bgImage from "./assets/moon.png";
 const App = () => {
   if (process.env.NODE_ENV === "development") {
     console.warn = () => {};

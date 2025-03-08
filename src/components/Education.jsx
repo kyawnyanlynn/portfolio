@@ -17,7 +17,7 @@ const EducationCard = ({ education }) => {
       contentStyle={{ background: "#1d1d1d", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={education.date}
-      dateClassName="text-[#FFC93E" // Change this to your desired color
+      dateClassName="text-[#FFC93E]"
       iconStyle={{ background: education.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
@@ -49,7 +49,9 @@ const Education = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.heroHeadText} ${styles.jpHeadText}`}>学歴</h2>
+        <h2 className={`${styles.heroHeadText} ${styles.jpHeadText}`}>
+          Education
+        </h2>
       </motion.div>
       <div className="mt-20 flex flex-col relative">
         <VerticalTimeline>

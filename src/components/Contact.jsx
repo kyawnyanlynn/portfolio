@@ -25,7 +25,7 @@ const Contact = () => {
         className="flex-[0.75] p-8 rounded-2xl card border border-[#e7e2e2] border-opacity-20"
       >
         <h3 className={`${styles.sectionHeadText} ${styles.jpHeadText}`}>
-          連絡
+          Contact
         </h3>
         <form
           ref={formRef}

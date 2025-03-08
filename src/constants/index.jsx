@@ -20,23 +20,23 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "自己紹介",
+    title: "About",
   },
   {
     id: "education",
-    title: "学歴",
+    title: "Education",
   },
   {
-    id: "projects",
-    title: "プロジェクト",
+    id: "works",
+    title: "Works",
   },
   {
     id: "contact",
-    title: "連絡",
+    title: "Contact",
   },
 ];
 
-const services = [
+const skills = [
   {
     title: "HTML",
     icon: html,
@@ -74,38 +74,6 @@ const services = [
     icon: framerMotion,
   },
 ];
-
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-];
-
 const educationBg = [
   {
     title: "Metro IT & Japanese Language Center",
@@ -152,11 +120,11 @@ const educationBg = [
     ],
   },
 ];
-const projects = [
+const works = [
   {
     name: "Webデザイン科 SpecialSite",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "日本電子専門学校Webデザイン科の入学検討者向けスペシャルサイトを企画・デザイン・コーディングまで一人で担当し制作。公式サイトにないリアルな学科の魅力を伝えることを目的にし、最終的に学科全員へプレゼンを行いました。",
     tags: [
       {
         name: "html",
@@ -177,7 +145,7 @@ const projects = [
   {
     name: "QuickCard LPページ",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "一年生後期の進級制作として、名刺管理アプリ「QuickCard」のランディングページを制作。株式会社サンシーアの開発中アプリを紹介するサイトで、企画から実装まで担当し、企業と連携しながら仕上げました。",
     tags: [
       {
         name: "html",
@@ -193,12 +161,12 @@ const projects = [
       },
     ],
     image: quickCard,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/kyawnyanlynn/QuickCard",
   },
   {
     name: "買い物リスト",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "授業とは別に個人制作した買い物リストアプリです。買い忘れや重複購入を防ぐために制作しました。スマホのメモアプリでは管理しづらい点を解消し、購入予定と購入済みの品が一目でわかるシンプルで使いやすいデザインに仕上げました。",
     tags: [
       {
         name: "html",
@@ -214,8 +182,8 @@ const projects = [
       },
     ],
     image: groceryList,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/kyawnyanlynn/grocery-list-app",
   },
 ];
 
-export { services, technologies, educationBg, projects };
+export { skills, educationBg, works };

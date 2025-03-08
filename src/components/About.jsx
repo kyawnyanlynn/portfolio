@@ -2,16 +2,16 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { services } from "../constants";
+import { skills } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({ index, title, icon }) => {
+const SkillCard = ({ index, title, icon }) => {
   return (
     <Tilt className=" w-[150px] flex justify-center items-center">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] "
+        className="w-full border border-[#e7e2e2] p-[1px] rounded-[20px] "
       >
         <div
           options={{
@@ -34,13 +34,11 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionHeadText} ${styles.jpHeadText}`}>
-          自己紹介
-        </h2>
+        <h2 className={`${styles.sectionHeadText}`}>About</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className={`${styles.jpSubText}mt-4 text-slate- text-[17px] max-w-3xl leading-[30px]`}
+        className={`${styles.jpSubText}mt-4 text-[#e7e2e2] text-[17px] max-w-3xl leading-[30px]`}
       >
         はじめまして、チョーニャンリンと申します。ミャンマー出身で、現在は日本電子専門学校のWebデザイン科1年生です。
         趣味はサッカーをすることと、Esportsの試合やサッカーの試合を見ることです。コーディングも好きで、現在はフロントエンドエンジニアを目指して取り組んでいます。
@@ -48,11 +46,11 @@ const About = () => {
       </motion.p>
 
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.jpHeadText} text-[30px] mt-14`}>スキル</h2>
+        <h2 className={`${styles.jpHeadText} text-[30px] mt-14`}>Skills</h2>
       </motion.div>
       <div className="mt-16 flex flex-wrap justify-center md:justify-start gap-8">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+        {skills.map((service, index) => (
+          <SkillCard key={service.title} index={index} {...service} />
         ))}
       </div>
     </>
