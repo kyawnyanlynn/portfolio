@@ -37,10 +37,10 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              value={form.name}
-              onChange={handleChange}
+              // value={form.name}
+              // onChange={handleChange}
               placeholder="お名前をご記入ください。"
-              className="py-4 px-6 placeholder:text-[#e7e2e2] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
+              className="py-4 px-6 placeholder:text-[#e7e2e297] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -48,10 +48,10 @@ const Contact = () => {
             <input
               type="text"
               name="email"
-              value={form.email}
-              onChange={handleChange}
+              //value={form.email}
+              //onChange={handleChange}
               placeholder="メールアドラスをご記入ください。"
-              className="py-4 px-6 placeholder:text-[#e7e2e2] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
+              className="py-4 px-6 placeholder:text-[#e7e2e297] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -60,10 +60,10 @@ const Contact = () => {
               rows="7"
               type="text"
               name="message"
-              value={form.message}
-              onChange={handleChange}
+              //value={form.message}
+              //onChange={handleChange}
               placeholder="メッセージをお書きください。"
-              className="py-4 px-6 placeholder:text-[#e7e2e2] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
+              className="py-4 px-6 placeholder:text-[#e7e2e297] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
           </label>
           <button
