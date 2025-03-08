@@ -128,15 +128,15 @@ const works = [
     tags: [
       {
         name: "html",
-        color: "work-textOrange",
+        color: "work-textHtml",
       },
       {
         name: "javaScript",
-        color: "work-textYellow",
+        color: "work-textJavaScript",
       },
       {
         name: "css",
-        color: "work-textPink",
+        color: "work-textCss",
       },
     ],
     image: specialSite,
@@ -148,16 +148,28 @@ const works = [
       "一年生後期の進級制作として、名刺管理アプリ「QuickCard」のランディングページを制作。株式会社サンシーアの開発中アプリを紹介するサイトで、企画から実装まで担当し、企業と連携しながら仕上げました。",
     tags: [
       {
+        name: "figma",
+        color: "work-textFigma",
+      },
+      {
         name: "html",
-        color: "work-textOrange",
+        color: "work-textHtml",
       },
       {
         name: "javaScript",
-        color: "work-textYellow",
+        color: "work-textJavaScript",
       },
       {
         name: "css",
-        color: "work-textPink",
+        color: "work-textCss",
+      },
+      {
+        name: "photoshop",
+        color: "work-textPhotoshop",
+      },
+      {
+        name: "illustrator",
+        color: "work-textIllustrator",
       },
     ],
     image: quickCard,
@@ -169,16 +181,25 @@ const works = [
       "授業とは別に個人制作した買い物リストアプリです。買い忘れや重複購入を防ぐために制作しました。スマホのメモアプリでは管理しづらい点を解消し、購入予定と購入済みの品が一目でわかるシンプルで使いやすいデザインに仕上げました。",
     tags: [
       {
-        name: "html",
-        color: "work-textOrange",
+        name: "figma",
+        color: "work-textFigma",
       },
       {
-        name: "react",
-        color: "work-textBlue",
+        name: "html",
+        color: "work-textHtml",
       },
       {
         name: "css",
-        color: "work-textPink",
+        color: "work-textCss",
+      },
+
+      {
+        name: "javaScript",
+        color: "work-textJavaScript",
+      },
+      {
+        name: "react",
+        color: "work-textReact",
       },
     ],
     image: groceryList,
