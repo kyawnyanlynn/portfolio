@@ -177,7 +177,7 @@ const works = [
     image: quickCard,
     source_code_link: "https://github.com/kyawnyanlynn/QuickCard",
     pdf_link:
-      "https://drive.google.com/drive/u/2/folders/1nDCb_Bi1cwTLLQyrbT-sharing",
+      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
   },
   {
     name: "買い物リスト",
@@ -209,7 +209,7 @@ const works = [
     image: groceryList,
     source_code_link: "https://github.com/kyawnyanlynn/grocery-list-app",
     pdf_link:
-      "https://drive.google.com/drive/u/2/folders/1nDCb_Bi1cwTLLQyrbT-sharing",
+      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
   },
   {
     name: "ポートフォリオサイト",
@@ -257,7 +257,7 @@ const works = [
     image: portfolio,
     source_code_link: "https://github.com/kyawnyanlynn/portfolio",
     pdf_link:
-      "https://drive.google.com/drive/u/2/folders/1nDCb_Bi1cwTLLQyrbT-sharing",
+      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
   },
 ];
 
