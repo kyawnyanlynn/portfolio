@@ -91,6 +91,15 @@
 .work-textFigma {
   color: #e4041d;
 }
+.work-textFramerMotion {
+  color: #ec15c1;
+}
+.work-textThreeJs {
+  color: #47ba87;
+}
+.work-textTailwind {
+  color: #00bbff;
+}
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

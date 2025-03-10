@@ -1,9 +1,6 @@
 import logo from "./logo.svg";
-import web from "./web.png";
 import github from "./github.png";
 import pdf from "./pdf.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
 import css from "./skills/css.png";
 import figma from "./skills/figma.png";
@@ -24,14 +21,12 @@ import metro from "./schools/metro.png";
 import specialSite from "./works/specialSite.png";
 import quickCard from "./works/quickCard.png";
 import groceryList from "./works/groceryList.png";
+import portfolio from "./works/portfolio.png";
 
 export {
   logo,
-  web,
   github,
   pdf,
-  menu,
-  close,
   css,
   figma,
   git,
@@ -49,4 +44,5 @@ export {
   specialSite,
   quickCard,
   groceryList,
+  portfolio,
 };
