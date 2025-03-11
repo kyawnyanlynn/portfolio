@@ -39,7 +39,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you");
+          alert("ご送信、ありがとうございました。");
           setForm({
             name: "",
             email: "",
@@ -49,7 +49,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.log(error);
-          alert("Something went wrong.");
+          alert("申し訳ございません、何かがうまくいきませんでした。");
         }
       );
   };
