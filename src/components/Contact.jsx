@@ -14,9 +14,45 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "service_1l4m46k",
+        "template_a3kd8hf",
+        {
+          from_name: form.name,
+          to_name: "Lynn",
+          from_email: form.email,
+          to_email: "contact@jsmastery.pro",
+          message: form.message,
+        },
+        "ByH0E8Btrujj7OsA6"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you");
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong.");
+        }
+      );
+  };
 
   return (
     <div className="xl:mt-12 xl:flew-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -27,6 +63,9 @@ const Contact = () => {
         <h3 className={`${styles.sectionHeadText} ${styles.jpHeadText}`}>
           Contact
         </h3>
+        <p className="mt-3 text-[#e7e2e2] text-[17px] max-x-3xl leading-[30px]">
+          ご興味を持っていただき誠にありがとうございます。ご質問などがあれば気軽にお問い合わせください。
+        </p>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -37,8 +76,8 @@ const Contact = () => {
             <input
               type="text"
               name="name"
-              // value={form.name}
-              // onChange={handleChange}
+              value={form.name}
+              onChange={handleChange}
               placeholder="お名前をご記入ください。"
               className="py-4 px-6 placeholder:text-[#e7e2e297] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
@@ -48,8 +87,8 @@ const Contact = () => {
             <input
               type="text"
               name="email"
-              //value={form.email}
-              //onChange={handleChange}
+              value={form.email}
+              onChange={handleChange}
               placeholder="メールアドラスをご記入ください。"
               className="py-4 px-6 placeholder:text-[#e7e2e297] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
@@ -60,8 +99,8 @@ const Contact = () => {
               rows="7"
               type="text"
               name="message"
-              //value={form.message}
-              //onChange={handleChange}
+              value={form.message}
+              onChange={handleChange}
               placeholder="メッセージをお書きください。"
               className="py-4 px-6 placeholder:text-[#e7e2e297] border border-[#e7e2e2] border-opacity-30 text-white rounded-lg font-medium"
             />
