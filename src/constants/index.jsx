@@ -257,7 +257,7 @@ const works = [
     image: portfolio,
     source_code_link: "https://github.com/kyawnyanlynn/portfolio",
     pdf_link:
-      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
+      "https://drive.google.com/file/d/1jHa5ZKR7iuG13woDmGh-c9eZS7I7Cat2/view?usp=sharing",
   },
 ];
 
