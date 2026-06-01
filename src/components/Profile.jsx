@@ -24,9 +24,6 @@ const Profile = () => {
             <p className={`${styles.heroSubText} mt-2 text-white`}>
               フロントエンドエンジニア
             </p>
-            <span className={`${styles.heroSubText} text-white`}>
-              よろしくお願いいたします。
-            </span>
           </div>
           <div className="bottom-0 items-center flex justify-end pb-20">
             <img className="w-[400px]" src={profile} alt="" />
