@@ -1,13 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
-  Contact,
   Education,
   Profile,
   Navbar,
   Works,
   StarsCanvas,
-  ParticleCanvas,
 } from "./components";
 const App = () => {
   if (process.env.NODE_ENV === "development") {
@@ -27,10 +25,6 @@ const App = () => {
         <About />
         <Education />
         <Works />
-        <div className="relative z-0">
-          <Contact />
-          <ParticleCanvas />
-        </div>
       </div>
     </BrowserRouter>
   );
