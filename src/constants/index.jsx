@@ -142,7 +142,7 @@ const works = [
     image: specialSite,
     source_code_link: "https://github.com/",
     pdf_link:
-      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
+      "https://drive.google.com/file/d/1jHa5ZKR7iuG13woDmGh-c9eZS7I7Cat2/view?usp=sharing",
   },
   {
     name: "QuickCard LPページ",
@@ -177,7 +177,7 @@ const works = [
     image: quickCard,
     source_code_link: "https://github.com/kyawnyanlynn/QuickCard",
     pdf_link:
-      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
+      "https://drive.google.com/file/d/1jHa5ZKR7iuG13woDmGh-c9eZS7I7Cat2/view?usp=sharing",
   },
   {
     name: "買い物リスト",
@@ -209,7 +209,7 @@ const works = [
     image: groceryList,
     source_code_link: "https://github.com/kyawnyanlynn/grocery-list-app",
     pdf_link:
-      "https://drive.google.com/file/d/1ZZEJmW-B9QS3SvOxfoEk88JdP1VCCre3/view?usp=sharing",
+      "https://drive.google.com/file/d/1jHa5ZKR7iuG13woDmGh-c9eZS7I7Cat2/view?usp=sharing",
   },
   {
     name: "ポートフォリオサイト",
